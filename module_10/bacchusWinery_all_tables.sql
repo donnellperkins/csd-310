@@ -95,6 +95,7 @@ CREATE TABLE `distributors` (
 CREATE TABLE `distributorsorders` (
   `distributorsordersID` int NOT NULL AUTO_INCREMENT,
   `productsID` int NOT NULL,
+  `order_date` date,
   `totalCost` int NOT NULL,
   `distributorsID` int NOT NULL,
   PRIMARY KEY (`distributorsordersID`),
